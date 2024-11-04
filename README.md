@@ -11,5 +11,7 @@ Se implemento en C++, dentro del código se documenta el funcionamiento. Se uso 
 Se tiene una primera versión. Tiene detalle en la impresión de la acción MOSTRAR hay parentización de más. 
 Faltan pruebas unitarias. 
 
-## Pregunta 3:
+## Pregunta 4:
 
+Funciona la recursión normal. 
+Faltan la recursión de cola y la versión iterativa.
