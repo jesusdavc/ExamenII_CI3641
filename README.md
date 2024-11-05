@@ -13,5 +13,4 @@ Faltan pruebas unitarias.
 
 ## Pregunta 4:
 
-Funciona la recursión normal. 
-Faltan la recursión de cola y la versión iterativa.
+Funciona la recursión normal. Funciona la versión recursiva de cola. Falta la versión iterativa.

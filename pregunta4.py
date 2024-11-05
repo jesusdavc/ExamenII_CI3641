@@ -12,12 +12,23 @@ def recursive_alpha_beta(n, alpha = 5, beta = 7):
     else:
         return (recursive_alpha_beta(n-7) + recursive_alpha_beta(n-14) + recursive_alpha_beta(n-21) + recursive_alpha_beta(n-28) + recursive_alpha_beta(n-35)) 
     
-print(recursive_alpha_beta(36))
 
 #Subrutina con recursión de cola
 
-def recursive_alpha_beta_tail(n, alpha = 5, beta = 7, acc = 0):
-    if 0 <= n < alpha * beta:
-        return n + acc
-    
+def recursive_tail_alpha_beta(n, alpha=5, beta = 7, acc=0):
+        if 0 <= n < alpha * beta:
+            return n + acc
+        else:
+            acc += acc
+            return (recursive_alpha_beta(n-7*acc))
+
+def main():
+    print(recursive_alpha_beta(40))
+    print(recursive_tail_alpha_beta(40))
+
+if __name__ == "__main__":
+    main()
+
+
+
 
