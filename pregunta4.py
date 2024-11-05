@@ -6,6 +6,7 @@
 
 from collections import deque
 import time
+from tabulate import tabulate  
 
 #Subrutina recursiva
 def recursive_alpha_beta(n, alpha = 5, beta = 7):
@@ -55,7 +56,7 @@ def main():
     media_r = 0
     media_rt = 0
     media_i = 0
-    for i in range(36,40):
+    for i in range(36,1001):
 
         t1 = time.time() 
         recursive_alpha_beta(i)
@@ -90,9 +91,15 @@ def main():
     media_i = temporal/len(iterative_alpha_beta_results)
     temporal = 0
 
-    print(f'La media de ejecuión de la recursión fue:         {media_r}')
-    print(f'La media de ejecuión de la recursión de cola fue: {media_rt}')
-    print(f'La media de ejecuión de la versión iterativa    : {media_i}')
+
+    # Mostrar resultados en formato de tabla
+    headers = ["Implementación", "Tiempo promedio (segundos)"]
+    data = [
+        ["Recursión", media_r],
+        ["Recursión de Cola", media_rt],
+        ["Iterativa", media_i]
+    ]
+    print(tabulate(data, headers=headers, tablefmt="pretty"))
 if __name__ == "__main__":
     main()
 
