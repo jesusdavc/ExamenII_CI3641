@@ -16,7 +16,7 @@ Faltan pruebas unitarias.
 Las tres versiones: Recursiva, Recursiva de Cola e Iterativa se encuentran implementadas. Estan en el archivo **pregunta4.py**
 
 ### Analisis
-Al probar las implementaciones varias veces se puede notar que la versión iterativa consume mucho más tiempo de ejecución. Sin emebargo la diferencia entre la recursión y la recursión de cola si bien entre ellas no es mucha si se ve la tendencia a que la recursión de cola es mucho más rápida. 
+Al probar las implementaciones varias veces se puede notar que la versión iterativa consume mucho más tiempo de ejecución. Sin emebargo la diferencia entre la recursión y la recursión de cola si bien entre ellas no es mucha si se ve la tendencia a que la recursión de cola es mucho más rápida. Se muestran las salidas en formato tabla para varios valores:
 
 Para ejecuciones desde 1 al 35
 ```
