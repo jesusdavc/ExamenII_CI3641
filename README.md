@@ -13,4 +13,4 @@ Faltan pruebas unitarias.
 
 ## Pregunta 4:
 
-Funciona la recursión normal. Funciona la versión recursiva de cola. Falta la versión iterativa.
+Las tres versiones: Recursiva, Recursiva de Cola e Iterativa se encuentran implementadas. Estan en el archivo **pregunta4.py**
